@@ -15,19 +15,19 @@ See the Postgres SQL and data CSV in `/postgresDB/`
 
 ## Set-up
 
-1. Download the code using [git] (https://git-scm.com/downloads)
+1. Download the code using [git](https://git-scm.com/downloads)
 
-`git clone https://github.com/jmora060/AirlineDatabaseApp`
+    `git clone https://github.com/jmora060/AirlineDatabaseApp`
 
-2. Install [Docker CE] (https://docs.docker.com/install/linux/docker-ce/ubuntu/) for your OS
-3. Install [Docker Compose] (https://docs.docker.com/compose/install/)
+2. Install [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/) for your OS
+3. Install [Docker Compose](https://docs.docker.com/compose/install/)
 
 
 ## RUN
   * On Linux:
   
-  `sudo docker-compose pull` (this may take a while)
+      `sudo docker-compose pull` (this may take a while)
   
-  `sudo docker-compose up -d db`
+      `sudo docker-compose up -d db`
   
-  `sudo docker-compose run java`
+      `sudo docker-compose run java`
