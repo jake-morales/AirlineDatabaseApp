@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+        db:
+                image: postgres
+                environment:
+                        POSTGRES_USER: postgres
+                        POSTGRES_PASSWORD: password
+                        POSTGRES_DB: mydb
+                volumes:
+                        - ./postgresDB/data:/data
+                        - ./postgresDB/create.sql:/docker-entrypoint-initdb.d/create.sql
+                ports:
+                        - '5432:5432'
+        java:
+                build: ./javaAPP/
+                depends_on:
+                        - db
+                stdin_open: true
+                tty: true
+                
