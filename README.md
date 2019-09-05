@@ -25,9 +25,12 @@ See the Postgres SQL and data CSV in `/postgresDB/`
 
 ## RUN
   * On Mac/Linux:
-  
-      `docker-compose pull` (pull base docker images)
-  
+    
       `docker-compose up -d db`(start postgres database container)
   
       `docker-compose run java` (run java command-line program)
+
+## STOP
+  * On Mac/Linux:
+  
+      `docker-compose down` (pull base docker images)
