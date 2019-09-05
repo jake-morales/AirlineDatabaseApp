@@ -1,0 +1,3 @@
+# to add empty /bin folder to git. Otherwise, git would ignore it
+*
+!.gitignore

@@ -1,4 +1,4 @@
-FROM openjdk
+FROM openjdk:8-alpine
 ADD . /code
 WORKDIR /code
 
